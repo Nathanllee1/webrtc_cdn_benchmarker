@@ -1,0 +1,83 @@
+<script>
+    /*
+        {
+            "rtc_config" : <rtc_config>
+        }
+
+    */
+    
+
+    const load_cdn_image = () => {
+        let cdn_image = document.getElementById("normal-cdn-image1");
+        let cdn_speed_text = document.getElementById("cdn_speed_text");
+
+        let start_time = new Date();
+
+        cdn_image.onload = () => {
+            cdn_speed_text.innerText = new Date() - start_time + " ms";
+
+            cdn_image.width = "200";
+        }
+
+        cdn_image.src = "https://i.ibb.co/syT7fWL/DSC01268.jpg";
+    }
+
+    const load_rtc_image = () => {
+
+        const peer_params = ${peer_params}
+
+        // if no peers
+        if (!peer_params.rtc_config) { 
+            document.getElementById("rtc_status").innerText = "No peers on this load. Open a new tab and load the cdn image and refresh to try again.";
+        }
+
+        // Create WebSocket connection.
+        const socket = new WebSocket('ws://localhost:5000');
+
+        // Connection opened
+        socket.addEventListener('open', function (event) {
+            socket.send('Hello Server!');
+        });
+
+        // Listen for messages
+        socket.addEventListener('message', function (event) {
+            console.log('Message from server ', event.data);
+        });
+    }
+
+</script>
+
+<body>
+    <h1>Web RTC CDN Benchmarker</h1>
+    <p>
+        
+    </p>
+    <div>
+        <h3>CDN Loaded image</h3>
+        <button onclick="load_cdn_image()">Load</button><br>
+        <img id="normal-cdn-image1" src="">
+        <h4 id="cdn_speed_text"></h4>
+    </div>
+
+    <br />
+
+    <div>
+        <h3>Web RTC Loaded Image</h3>
+        <p id="rtc_status">Peer status loading...</p>
+        <button onclick="load_rtc_image()">Load</button><br>
+        <img id="rtc-cdn-image1" />
+    </div>
+
+
+</body>
+
+<style>
+    body {
+        padding: 10%;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    img {
+        margin-top: 5px;
+    }
+</style>
