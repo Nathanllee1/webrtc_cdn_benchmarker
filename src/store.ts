@@ -1,3 +1,4 @@
+import { Websocket_User } from "./websocket_user";
 
 interface app_store {
     [index: string]: {
@@ -8,18 +9,25 @@ interface app_store {
 
 interface peer_description {
     uuid:string,
-    peer_info: object
+    peer_info: object,
+}
+
+interface peer {
+    [index: string]: Websocket_User;
 }
 
 export class peer_store {
 
     base_store: app_store;
+    peerList: peer = {};
 
     constructor(base_store: app_store) {
         this.base_store = base_store;
     }
 
-    add_peer(files: string[], peer:peer_description) {
+    add_peer(files: string[], peer:peer_description, ws:Websocket_User) {
+        this.peerList[peer.uuid] = ws;
+
         files.forEach((file) => {
 
             if (this.base_store[file]) {
@@ -39,6 +47,10 @@ export class peer_store {
                 }
             })
         })
+    }
+
+    send_message_to_peer(uuid:string, message:object) {
+        this.peerList[uuid].send_json(message);
     }
 
 }

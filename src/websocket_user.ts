@@ -3,12 +3,17 @@ import { peer_store } from './store';
 
 interface ws_message {
     type: string,
-    body: register_info
+    body: any
 }
 
 interface register_info {
     rtc_config: object,
     files: string[]
+}
+
+interface rtc_answer {
+    uuid: string,
+    answer: object
 }
 
 export class Websocket_User {
@@ -47,13 +52,31 @@ export class Websocket_User {
     
                 let peer_obj:register_info = data.body;
     
-                this.store.add_peer(peer_obj.files, { uuid:this.uuid, peer_info:peer_obj.rtc_config});
+                this.store.add_peer(
+                    peer_obj.files, 
+                    {uuid:this.uuid, peer_info:peer_obj.rtc_config}, 
+                    this
+                );
     
+                break;
+
+            case "answer":
+
+                console.log("Relaying answer");
+
+                let answer_obj:rtc_answer = data.body;
+
+                this.store.send_message_to_peer(answer_obj.uuid ,answer_obj);
+
                 break;
     
             default:
                 throw new Error(`Message type ${data.type} not supported`)
         }
+    }
+
+    send_json = (obj:object) => {
+        this.ws_obj.send(JSON.stringify(obj));
     }
 
 }

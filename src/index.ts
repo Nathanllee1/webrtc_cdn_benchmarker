@@ -2,6 +2,8 @@ import express from "express";
 import fs from "fs";
 import { peer_store } from "./store";
 
+import * as path from "path";
+
 const app = express();
 const http_port = 3000;
 
@@ -10,7 +12,7 @@ import {start_websocket} from "./websocket";
 app.listen(http_port, () => {
     console.log("App listening on port", http_port);
     start_websocket(app_store);
-})
+})  
 
 // a hypothetical endpoint
 
@@ -24,12 +26,8 @@ let file_struct = {
 
 let app_store = new peer_store(file_struct);
 
-app.get('/', (req, res) => {
-    const index = fs.readFileSync("/home/nathanlee/Workspace/webrtc_cdn/client/index.html");
+app.use("/", express.static(path.join(__dirname, '../client/build')));
 
-    let index_string = index.toString();
-
-    index_string = index_string.replace('"PEER_PARAMS"', JSON.stringify(file_struct));
-    res.set('Content-Type', 'text/html');
-    res.send(index_string);
+app.get('/peers', (req, res) => {
+    res.send (JSON.stringify(app_store.base_store));
 })
