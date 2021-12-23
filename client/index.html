@@ -14,13 +14,30 @@
     const peer_params = "PEER_PARAMS"
     /////////////////////////////////////////////////////////////
 
-    const register_peer = () => {
+    const setup_rtc_offer = async () => {
+
+        let peer_connection = new RTCPeerConnection();
+
+        return (await peer_connection.createOffer())
+
+    }
+
+    const register_peer = async (filename) => {
+
+        let offer = await setup_rtc_offer();
+
         // Create WebSocket connection.
         const socket = new WebSocket('ws://localhost:5000');
 
         // Connection opened
         socket.addEventListener('open', function (event) {
-            socket.send('Hello Server!');
+            socket.send(JSON.stringify({
+                type: "peer_register",
+                body: {
+                    rtc_config: offer,
+                    files: [filename]
+                }
+            }));
         });
 
         // Listen for messages
@@ -39,7 +56,7 @@
         cdn_image.onload = () => {
             cdn_speed_text.innerText = "4.0 mb loaded in " + (new Date() - start_time) + " ms";
 
-            register_peer();
+            register_peer(file_name);
         }
 
         cdn_image.src = image_loc;
@@ -50,15 +67,21 @@
     }
 
     window.addEventListener('DOMContentLoaded', (event) => {
-        peer_params.forEach((item) => {
+
+        let p2p_files = [];
+
+        Object.keys(peer_params).forEach((filename) => {
             // if no peer for file, load over cdn
-            if (Object.keys(item.peer_info).length == 0) {
+            if (Object.keys(peer_params[filename].peers).length == 0) {
                 document.getElementById("rtc_status").innerText = "Image loaded over CDN. Open a new tab to get it peer to peer";
 
-                load_cdn_image(item.cdn_url, item.file_name);
+                p2p_files.push()
+
+                load_cdn_image(peer_params[filename].cdn_url, filename);
             }
             // else load over web rtc
             else {
+                document.getElementById("rtc_status").innerText = "Image loaded over P2P!";
                 load_rtc_image();
             }
         })
