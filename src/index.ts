@@ -4,8 +4,13 @@ import { peer_store } from "./store";
 
 import * as path from "path";
 
+import cors from "cors";
+
 const app = express();
 const http_port = 3000;
+
+app.use(cors())
+
 
 import {start_websocket} from "./websocket";
 
@@ -26,7 +31,7 @@ let file_struct = {
 
 let app_store = new peer_store(file_struct);
 
-app.use("/", express.static(path.join(__dirname, '../client/build')));
+app.use("/", express.static(path.join(__dirname, '../client/src')));
 
 app.get('/peers', (req, res) => {
     res.send (JSON.stringify(app_store.base_store));

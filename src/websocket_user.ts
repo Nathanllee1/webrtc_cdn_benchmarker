@@ -16,6 +16,16 @@ interface rtc_answer {
     answer: object
 }
 
+interface rtc_ice {
+    uuid: string,
+    canidate: object
+}
+
+interface rtc_offer {
+    uuid: string,
+    offer: object
+}
+
 export class Websocket_User {
 
     ws_obj:WebSocket;
@@ -32,8 +42,8 @@ export class Websocket_User {
                 let parsed:ws_message = JSON.parse(data.toString())
                 this.parse_ws_message(parsed);
 
-            } catch {
-                console.error("Couldn't parse json", data.toString());
+            } catch (e) {
+                console.error(e);
             }
 
         })
@@ -47,8 +57,17 @@ export class Websocket_User {
 
     parse_ws_message = (data:ws_message) => {
         switch (data.type) {
+
+            case "offer":
+                console.log("Relaying offer for ", this.uuid);
+
+                let offer_obj:rtc_offer = data.body;
+                console.log(offer_obj);
+
+                this.store.send_message_to_peer(offer_obj.uuid, offer_obj);
+
             case "peer_register":
-                console.log("Registering peers");
+                console.log("Registering peers for", this.uuid);
     
                 let peer_obj:register_info = data.body;
     
@@ -67,6 +86,15 @@ export class Websocket_User {
                 let answer_obj:rtc_answer = data.body;
 
                 this.store.send_message_to_peer(answer_obj.uuid ,answer_obj);
+
+                break;
+
+            case "iceCanidate":
+                console.log("Relaying ice canidate");
+
+                let ice_obj:rtc_ice = data.body;
+
+                this.store.send_message_to_peer(ice_obj.uuid, ice_obj);
 
                 break;
     

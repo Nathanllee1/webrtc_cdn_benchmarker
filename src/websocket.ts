@@ -13,6 +13,7 @@ export const start_websocket = (store:peer_store) => {
     });
 
     ws.on('connection', (ws_obj) => {
+        console.log("Incoming connection")
         new Websocket_User(ws_obj, store);
     })
 }

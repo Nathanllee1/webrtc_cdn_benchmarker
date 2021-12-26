@@ -15,7 +15,7 @@ const load_cdn_image = (image_loc, file_name) => {
 };
 
 const initialize_app = async () => {
-    const fetched_params = await fetch("/peers");
+    const fetched_params = await fetch(`${window.location.origin}/peers`);
     const peer_params = await fetched_params.json();
 
     console.log(peer_params);
