@@ -24,15 +24,19 @@ app.listen(http_port, () => {
 // the file struct for this 
 let file_struct = {
     test_file: {
-        "cdn_url": "https://drive.google.com/uc?export=download&id=1Ah2BtYr8wDn3_qO-Wd6gLsBYqDeTgIKD",
+        "cdn_url": "http://localhost:8080/test_files/DSC01268.jpg",
+        "peers": []
+    },
+    test_file2: {
+        "cdn_url": "http://localhost:8080/test_files/output.jpg",
         "peers": []
     }
 }
 
 let app_store = new peer_store(file_struct);
 
-app.use("/", express.static(path.join(__dirname, '../client/src')));
+app.use("/", express.static(path.join(__dirname, '../build')));
 
 app.get('/peers', (req, res) => {
-    res.send (JSON.stringify(app_store.base_store));
+    res.send (JSON.stringify(app_store.generate_peerlist(["test_file", "test_file2"])));
 })
