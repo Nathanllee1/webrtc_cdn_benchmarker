@@ -1,30 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
+import { logger } from '../logger';
 import { peer_store } from './store';
-
-interface ws_message {
-    type: string,
-    body: any
-}
-
-interface register_info {
-    rtc_config: object,
-    files: string[]
-}
-
-interface rtc_answer {
-    uuid: string,
-    answer: object
-}
-
-interface rtc_ice {
-    uuid: string,
-    canidate: object
-}
-
-interface rtc_offer {
-    uuid: string,
-    offer: object
-}
+import { ws_message, rtc_offer, register_info, rtc_answer, rtc_ice } from './ws_types';
 
 export class Websocket_User {
 
@@ -43,13 +20,13 @@ export class Websocket_User {
                 this.parse_ws_message(parsed);
 
             } catch (e) {
-                console.error(e);
+                logger.error(e);
             }
 
         })
 
         ws_obj.on('close', () => {
-            console.log("Closing", this.uuid);
+            logger.info(`Closing ${this.uuid}`);
 
             store.remove_peer(this.uuid);
         })
@@ -59,18 +36,17 @@ export class Websocket_User {
         switch (data.type) {
 
             case "offer":
-                console.log("Relaying offer for ", this.uuid);
+                logger.info(`Relaying offer for ${this.uuid}`);
 
                 let offer_obj:rtc_offer = data.body;
-                console.log(offer_obj);
+                logger.info(offer_obj);
 
                 this.store.send_message_to_peer(offer_obj.uuid, offer_obj);
 
             case "peer_register":
-                console.log("Registering peers for", this.uuid);
+                logger.info(`Registering peers for ${this.uuid}`);
     
                 let peer_obj:register_info = data.body;
-    
                 this.store.add_peer(
                     peer_obj.files, 
                     {uuid:this.uuid, peer_info:peer_obj.rtc_config}, 
@@ -80,19 +56,17 @@ export class Websocket_User {
                 break;
 
             case "answer":
-
-                console.log("Relaying answer");
-
                 let answer_obj:rtc_answer = data.body;
+                logger.info(`Relaying answer to ${answer_obj.uuid}`);
 
                 this.store.send_message_to_peer(answer_obj.uuid ,answer_obj);
 
                 break;
 
             case "iceCanidate":
-                console.log("Relaying ice canidate");
-
                 let ice_obj:rtc_ice = data.body;
+
+                logger.info(`Relaying ice canidate to ${ice_obj.uuid}`);
 
                 this.store.send_message_to_peer(ice_obj.uuid, ice_obj);
 

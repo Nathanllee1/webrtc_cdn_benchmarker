@@ -9,7 +9,7 @@ interface app_store {
 
 interface peer_description {
     uuid: string,
-    peer_info: object,
+    peer_info: RTCSessionDescriptionInit,
 }
 
 interface peer {
@@ -18,7 +18,8 @@ interface peer {
 
 export interface peerList {
     cdn: cdn_description[],
-    rtc: rtc_list
+    rtc: rtc_list,
+    file_list: string[]
 }
 
 export interface cdn_description {
@@ -31,7 +32,7 @@ export interface rtc_list {
 }
 
 export interface rtc_description  {
-    peer_description: object,
+    peer_description: RTCSessionDescriptionInit,
     cdn_fallback: cdn_description[]
 }
 
@@ -48,7 +49,8 @@ export class peer_store {
 
         let peerlist: peerList = {
             cdn: [],
-            rtc: {}
+            rtc: {},
+            file_list: files
         };
 
         files.forEach((file) => {
@@ -64,11 +66,17 @@ export class peer_store {
                 }
                 else {
                     let peer = this.pick_peer(file_obj.peers);
-                    peerlist.rtc[peer.uuid].peer_description = peer.peer_info;
+
+                    if (!peerlist.rtc[peer.uuid]) {
+                        peerlist.rtc[peer.uuid] = { peer_description: peer.peer_info, cdn_fallback:[]}
+                    }
+                    
                     peerlist.rtc[peer.uuid].cdn_fallback.push({
                         filename: file,
                         cdn_url: file_obj.cdn_url
                     })
+
+                    
                 }
             } else {
                 console.error(`${file} not found`)

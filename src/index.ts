@@ -3,6 +3,7 @@ import fs from "fs";
 import { peer_store } from "./store";
 
 import * as path from "path";
+import { logger } from "../logger";
 
 import cors from "cors";
 
@@ -11,11 +12,11 @@ const http_port = 3000;
 
 app.use(cors())
 
-
 import {start_websocket} from "./websocket";
+import chalk from "chalk";
 
 app.listen(http_port, () => {
-    console.log("App listening on port", http_port);
+    logger.info(`App listening on port ${chalk.yellow(http_port)}`);
     start_websocket(app_store);
 })  
 

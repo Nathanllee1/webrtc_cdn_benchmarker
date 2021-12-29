@@ -1,0 +1,226 @@
+2021-12-28T01:51:47.955Z [logger.ts] info: App listening on port
+2021-12-28T01:52:45.204Z [logger.ts] info: App listening on port
+2021-12-28T01:53:15.996Z [logger.ts] info: App listening on port 3000
+2021-12-28T01:53:20.284Z [logger.ts] info: App listening on port 3000
+2021-12-28T01:54:01.570Z [logger.ts] info: App listening on port 3000
+[90m2021-12-28T02:12:02.213Z[39m [90m[logger.ts][39m info: App listening on port 3000
+[90mfunction toLocaleTimeString() { [native code] }[39m info: App listening on port 3000
+[90m6:15:46 PM[39m info: App listening on port 3000
+[90m6:18:13 PM[39m info: App listening on port 3000
+[90m6:18:13 PM[39m info: Websocket listening on
+[90m6:18:16 PM[39m info: App listening on port 3000
+[90m6:18:16 PM[39m info: Websocket listening on
+[90m6:19:32 PM[39m info: App listening on port 3000
+[90m6:19:32 PM[39m info: Websocket listening on
+[90m6:19:35 PM[39m info: App listening on port 3000
+[90m6:19:35 PM[39m info: Websocket listening on
+[90m6:19:48 PM[39m info: App listening on port 3000
+[90m6:19:48 PM[39m info: Websocket listening on
+[90m6:22:13 PM[39m [97minfo[39m: App listening on port 3000
+[90m6:22:13 PM[39m [97minfo[39m: Websocket listening on
+[90m6:22:26 PM[39m [32minfo[39m: App listening on port 3000
+[90m6:22:26 PM[39m [32minfo[39m: Websocket listening on
+[[90m6:23:01 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m6:23:01 PM[39m] [32minfo[39m: Websocket listening on
+[[90m6:24:11 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:24:11 PM[39m] [32minfo[39m: Registering peers for
+[[90m6:24:20 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:24:20 PM[39m] [32minfo[39m: Registering peers for
+[[90m6:25:57 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m6:25:57 PM[39m] [32minfo[39m: Websocket listening on
+[[90m6:26:07 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m6:26:07 PM[39m] [32minfo[39m: Websocket listening on
+[[90m6:26:15 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:26:15 PM[39m] [32minfo[39m: Registering peers for c5498f6c-f9a1-40fc-9b12-bbd5d44fecd2
+[[90m6:26:19 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:26:19 PM[39m] [32minfo[39m: Registering peers for 0415d738-4840-4922-8599-1ffd74373c02
+[[90m6:27:47 PM[39m] [32minfo[39m: Closing 0415d738-4840-4922-8599-1ffd74373c02
+[[90m6:27:47 PM[39m] [32minfo[39m: Closing c5498f6c-f9a1-40fc-9b12-bbd5d44fecd2
+[[90m6:27:48 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:27:48 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:27:48 PM[39m] [32minfo[39m: Registering peers for da23cd62-62cf-401f-bd36-2f6db38ae61c
+[[90m6:27:48 PM[39m] [32minfo[39m: Registering peers for 13f5cd05-61b4-4dd6-8d72-75b8cc1f2226
+[[90m6:27:52 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m6:27:52 PM[39m] [32minfo[39m: Websocket listening on
+[[90m6:32:34 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m6:32:34 PM[39m] [32minfo[39m: Websocket listening on
+[[90m6:32:37 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m6:32:37 PM[39m] [32minfo[39m: Websocket listening on
+[[90m6:33:10 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:33:10 PM[39m] [32minfo[39m: Registering peers for 3ce29d9b-397b-4cdb-835c-a074be6a9991
+[[90m6:33:10 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:33:10 PM[39m] [32minfo[39m: Registering peers for c59f983d-d3ab-4905-b2f3-f7b27b9ae252
+[[90m6:33:14 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m6:33:14 PM[39m] [32minfo[39m: Websocket listening on
+[[90m6:33:16 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m6:33:16 PM[39m] [32minfo[39m: Websocket listening on
+[[90m6:33:16 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:33:16 PM[39m] [32minfo[39m: Registering peers for 9e39832c-6513-416d-b54b-76287f901cf2
+[[90m6:33:22 PM[39m] [32minfo[39m: Incoming connection
+[[90m6:33:22 PM[39m] [32minfo[39m: Relaying answer
+[[90m6:33:22 PM[39m] [32minfo[39m: Registering peers for 4c134043-2045-474b-95ab-109bd87ff64f
+[[90m9:03:35 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:03:35 PM[39m] [32minfo[39m: Websocket listening on
+[[90m9:03:42 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:03:42 PM[39m] [32minfo[39m: Websocket listening on
+[[90m9:15:56 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:15:56 PM[39m] [32minfo[39m: Websocket listening on
+[[90m9:39:35 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:39:35 PM[39m] [32minfo[39m: Websocket listening on
+[[90m9:39:47 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:39:47 PM[39m] [32minfo[39m: Registering peers for 0ee52eaa-ca3a-4c0f-b7f1-80e2ce0c3020
+[[90m9:39:57 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:39:57 PM[39m] [32minfo[39m: Relaying answer
+[[90m9:39:57 PM[39m] [32minfo[39m: Registering peers for 17902062-ba28-4f2e-a714-9c1061d52408
+[[90m9:40:49 PM[39m] [32minfo[39m: Closing 17902062-ba28-4f2e-a714-9c1061d52408
+[[90m9:40:49 PM[39m] [32minfo[39m: Closing 0ee52eaa-ca3a-4c0f-b7f1-80e2ce0c3020
+[[90m9:40:50 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:40:50 PM[39m] [32minfo[39m: Registering peers for 0a338855-50c5-4e94-9251-5b214cbf3168
+[[90m9:40:50 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:40:50 PM[39m] [32minfo[39m: Registering peers for c8d153a2-fef1-49f3-91e2-3ce62f1e781f
+[[90m9:40:56 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:40:56 PM[39m] [32minfo[39m: Websocket listening on
+[[90m9:43:00 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:43:00 PM[39m] [32minfo[39m: Websocket listening on
+[[90m9:43:03 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:43:03 PM[39m] [32minfo[39m: Registering peers for b1706a62-5dbf-4313-a3c9-6e1a4d256734
+[[90m9:44:55 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:44:55 PM[39m] [32minfo[39m: Relaying answer
+[[90m9:44:55 PM[39m] [32minfo[39m: Registering peers for 8b9256e4-77ba-4a23-a35b-394d75407e76
+[[90m9:47:31 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:47:31 PM[39m] [32minfo[39m: Websocket listening on
+[[90m9:47:36 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:47:36 PM[39m] [32minfo[39m: Registering peers for 39e23cb6-f24b-43fb-9cc0-c5600f471f4c
+[[90m9:47:44 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:47:44 PM[39m] [32minfo[39m: Relaying answer
+[[90m9:47:44 PM[39m] [32minfo[39m: Registering peers for 4a9a40fe-6e42-4bf0-91c4-02387317b1a5
+[[90m9:53:14 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:53:14 PM[39m] [32minfo[39m: Websocket listening on 5000
+[[90m9:53:47 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:53:47 PM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m9:55:03 PM[39m] [32minfo[39m: App listening on port 3000
+[[90m9:55:03 PM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m9:55:34 PM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m9:55:34 PM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m9:58:51 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:58:51 PM[39m] [32minfo[39m: Registering peers for f702503f-90f4-43f4-87db-e5fbabe0a62b
+[[90m9:58:56 PM[39m] [32minfo[39m: Incoming connection
+[[90m9:58:56 PM[39m] [32minfo[39m: Relaying answer to f702503f-90f4-43f4-87db-e5fbabe0a62b
+[[90m9:58:56 PM[39m] [32minfo[39m: Registering peers for 6ed91fc7-ac77-4007-8bc1-5221f763c309
+[[90m10:03:06 PM[39m] [32minfo[39m: Closing 6ed91fc7-ac77-4007-8bc1-5221f763c309
+[[90m10:03:06 PM[39m] [32minfo[39m: Closing f702503f-90f4-43f4-87db-e5fbabe0a62b
+[[90m10:03:07 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:03:07 PM[39m] [32minfo[39m: Registering peers for ebc4b487-5c7e-4693-956a-c67bbf5fa580
+[[90m10:03:07 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:03:07 PM[39m] [32minfo[39m: Registering peers for 5f93f849-9ad1-4ebf-aec8-2b67b4bef7da
+[[90m10:03:13 PM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m10:03:13 PM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m10:03:22 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:03:22 PM[39m] [32minfo[39m: Registering peers for 85875419-0f47-4b20-987b-416123750297
+[[90m10:03:24 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:03:24 PM[39m] [32minfo[39m: Relaying answer to 85875419-0f47-4b20-987b-416123750297
+[[90m10:03:24 PM[39m] [32minfo[39m: Registering peers for ce3e455a-e292-4595-be29-974b8614f5f1
+[[90m10:13:44 PM[39m] [32minfo[39m: Closing ce3e455a-e292-4595-be29-974b8614f5f1
+[[90m10:13:44 PM[39m] [32minfo[39m: Closing 85875419-0f47-4b20-987b-416123750297
+[[90m10:13:45 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:13:45 PM[39m] [32minfo[39m: Registering peers for a08d0311-bcf6-4dc4-93ea-b3367b9aa03d
+[[90m10:13:45 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:13:45 PM[39m] [32minfo[39m: Registering peers for 268a0c3f-9e0d-41cd-951b-fee1a30b7dd1
+[[90m10:13:52 PM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m10:13:52 PM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m10:13:53 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:13:53 PM[39m] [32minfo[39m: Registering peers for 0b01ffbc-75a2-4f95-bcc2-7b78c13871ca
+[[90m10:13:59 PM[39m] [32minfo[39m: Closing 0b01ffbc-75a2-4f95-bcc2-7b78c13871ca
+[[90m10:14:05 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:14:05 PM[39m] [32minfo[39m: Registering peers for 20ab116f-c9c1-40ac-a905-38cd32dc1cb1
+[[90m10:14:16 PM[39m] [32minfo[39m: Closing 20ab116f-c9c1-40ac-a905-38cd32dc1cb1
+[[90m10:14:19 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:14:19 PM[39m] [32minfo[39m: Registering peers for 70bb2b02-4b1b-48e8-a8c7-fe6968b85fd1
+[[90m10:14:22 PM[39m] [32minfo[39m: Incoming connection
+[[90m10:14:22 PM[39m] [32minfo[39m: Relaying answer to 70bb2b02-4b1b-48e8-a8c7-fe6968b85fd1
+[[90m10:14:22 PM[39m] [32minfo[39m: Registering peers for a15248b0-d65b-4f07-b0a2-cfa21e3e3a84
+[[90m12:15:03 AM[39m] [32minfo[39m: Closing a15248b0-d65b-4f07-b0a2-cfa21e3e3a84
+[[90m12:15:03 AM[39m] [32minfo[39m: Closing 70bb2b02-4b1b-48e8-a8c7-fe6968b85fd1
+[[90m12:15:04 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:15:04 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:15:04 AM[39m] [32minfo[39m: Registering peers for d2a7b5f2-175c-4afa-9c8d-4c111425ea12
+[[90m12:15:04 AM[39m] [32minfo[39m: Registering peers for 4ed8870c-aebb-486a-a256-56f92ccff5f0
+[[90m12:15:10 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:15:10 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:15:21 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:15:21 AM[39m] [32minfo[39m: Registering peers for 61baac14-5da1-4227-9b0c-7a9b42882abc
+[[90m12:15:21 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:15:21 AM[39m] [32minfo[39m: Registering peers for 1bfc79fb-7a04-4a25-a1a2-1334b9ee62fd
+[[90m12:15:28 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:15:28 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:15:33 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:15:33 AM[39m] [32minfo[39m: Registering peers for 4666c19c-17bb-4200-ae23-ba1e257c47ef
+[[90m12:15:35 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:15:35 AM[39m] [32minfo[39m: Relaying answer to 4666c19c-17bb-4200-ae23-ba1e257c47ef
+[[90m12:15:35 AM[39m] [32minfo[39m: Registering peers for a3868785-b14a-490a-83b3-52cb5260334d
+[[90m12:16:05 AM[39m] [32minfo[39m: Closing 4666c19c-17bb-4200-ae23-ba1e257c47ef
+[[90m12:16:05 AM[39m] [32minfo[39m: Closing a3868785-b14a-490a-83b3-52cb5260334d
+[[90m12:16:06 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:16:06 AM[39m] [32minfo[39m: Registering peers for 24b2dbb1-68f6-46d4-a85f-102a6d59a5ca
+[[90m12:16:06 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:16:06 AM[39m] [32minfo[39m: Relaying answer to 24b2dbb1-68f6-46d4-a85f-102a6d59a5ca
+[[90m12:16:06 AM[39m] [32minfo[39m: Registering peers for febf0df8-3017-40ff-a71d-effb145bd688
+[[90m12:16:18 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:16:18 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:16:46 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:16:46 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:16:51 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:16:51 AM[39m] [32minfo[39m: Registering peers for 98b6ce06-9bda-4be9-ba93-509b630158a4
+[[90m12:16:55 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:16:55 AM[39m] [32minfo[39m: Relaying answer to 98b6ce06-9bda-4be9-ba93-509b630158a4
+[[90m12:16:55 AM[39m] [32minfo[39m: Registering peers for 49a4f17e-de00-43db-ba37-5675cbdef8f4
+[[90m12:17:28 AM[39m] [32minfo[39m: Closing 49a4f17e-de00-43db-ba37-5675cbdef8f4
+[[90m12:17:28 AM[39m] [32minfo[39m: Closing 98b6ce06-9bda-4be9-ba93-509b630158a4
+[[90m12:17:29 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:17:29 AM[39m] [32minfo[39m: Registering peers for ff7e1f3d-a939-4474-b081-e53117c4f964
+[[90m12:17:29 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:17:29 AM[39m] [32minfo[39m: Relaying answer to ff7e1f3d-a939-4474-b081-e53117c4f964
+[[90m12:17:29 AM[39m] [32minfo[39m: Registering peers for 58e2d553-dcfd-4313-a60d-8dedd48129cb
+[[90m12:17:36 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:17:36 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:17:44 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:17:44 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:17:47 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:17:47 AM[39m] [32minfo[39m: Registering peers for 5559cabc-d66e-4986-ba3e-4ebbdb581412
+[[90m12:17:50 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:17:50 AM[39m] [32minfo[39m: Relaying answer to 5559cabc-d66e-4986-ba3e-4ebbdb581412
+[[90m12:17:50 AM[39m] [32minfo[39m: Registering peers for 5c99e5b7-f213-401e-929b-93399feb1173
+[[90m12:20:35 AM[39m] [32minfo[39m: Closing 5c99e5b7-f213-401e-929b-93399feb1173
+[[90m12:20:35 AM[39m] [32minfo[39m: Closing 5559cabc-d66e-4986-ba3e-4ebbdb581412
+[[90m12:20:36 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:20:36 AM[39m] [32minfo[39m: Registering peers for f77fa418-7675-41ac-bd01-e9b3a7b82a04
+[[90m12:20:36 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:20:36 AM[39m] [32minfo[39m: Registering peers for 8d1669c3-2d2a-4ca8-995c-5f39cf1489b3
+[[90m12:20:42 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:20:42 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:20:50 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:20:50 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:20:55 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:20:55 AM[39m] [32minfo[39m: Registering peers for c943d4c3-bdd9-4bdf-af43-dc24eada39a3
+[[90m12:20:57 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:20:57 AM[39m] [32minfo[39m: Relaying answer to c943d4c3-bdd9-4bdf-af43-dc24eada39a3
+[[90m12:20:57 AM[39m] [32minfo[39m: Registering peers for c47ce81a-4a8e-4b4f-9398-e443c8c9b7c4
+[[90m12:22:32 AM[39m] [32minfo[39m: Closing c943d4c3-bdd9-4bdf-af43-dc24eada39a3
+[[90m12:22:32 AM[39m] [32minfo[39m: Closing c47ce81a-4a8e-4b4f-9398-e443c8c9b7c4
+[[90m12:22:33 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:22:33 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:22:33 AM[39m] [32minfo[39m: Registering peers for cc3db4e5-b782-41c4-b97d-5628ffa18c2a
+[[90m12:22:33 AM[39m] [32minfo[39m: Registering peers for c001f74a-9d76-4d32-a6c3-2ec4472baaf2
+[[90m12:22:39 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:22:39 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:28:47 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:28:47 AM[39m] [32minfo[39m: Registering peers for b528ea0b-74ba-4764-8ef1-f83fe21e7f1a
+[[90m12:28:47 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:28:47 AM[39m] [32minfo[39m: Registering peers for 05ceea97-2c26-4833-9759-01ea639779c0
+[[90m12:28:53 AM[39m] [32minfo[39m: App listening on port [33m3000[39m
+[[90m12:28:53 AM[39m] [32minfo[39m: Websocket listening on [33m5000[39m
+[[90m12:29:03 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:29:03 AM[39m] [32minfo[39m: Registering peers for 4928d1a2-02e4-4daa-91fb-8dd29dac7e55
+[[90m12:29:07 AM[39m] [32minfo[39m: Incoming connection
+[[90m12:29:07 AM[39m] [32minfo[39m: Relaying answer to 4928d1a2-02e4-4daa-91fb-8dd29dac7e55
+[[90m12:29:07 AM[39m] [32minfo[39m: Registering peers for 65627c6c-bbaa-45e8-bcc7-923676e3788a
